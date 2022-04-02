@@ -1,0 +1,662 @@
+[
+  {
+    "name": "Actor flags",
+    "description": "Actor thing flags",
+    "flags": [
+      {
+        "flag": "0x01",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x02",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x04",
+        "name": "Use light intensity",
+        "description": "Actor \u0060intensity\u0060 param used.",
+        "enabled": true
+      },
+      {
+        "flag": "0x08",
+        "name": "Invulnerable",
+        "description": "Actor cannot be harmed by other things/physics.",
+        "enabled": true
+      },
+      {
+        "flag": "0x10",
+        "name": "Head is centered",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x20",
+        "name": "Explodes when killed",
+        "description": "Actor explodes when killed.\nThe \u0060explode\u0060 Thing param must be set with explosion template.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40",
+        "name": "Breath under water",
+        "description": "Actor won\u0027t drawn under water.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80",
+        "name": "Invisible",
+        "description": "Actor is not visible to other actors.",
+        "enabled": true
+      },
+      {
+        "flag": "0x100",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x200",
+        "name": "Boss",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x400",
+        "name": "Deaf",
+        "description": "AI actor cannot hear other actors.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800",
+        "name": "Blind",
+        "description": "AI Actor cannot see other actors.",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000",
+        "name": "Poisoned",
+        "description": "Actor was bitten or sting by snake, spider, scorpion etc... and is poisoned.\nHUD shows death icon for player.",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000",
+        "name": "Delay fire",
+        "description": "AI actor will delay fire action.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000",
+        "name": "Immobile",
+        "description": "Actor cannot move.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x100000",
+        "name": "No target",
+        "description": "Player won\u0027t aim with weapon at actor.",
+        "enabled": true
+      },
+      {
+        "flag": "0x200000",
+        "name": "Disabled",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x400000",
+        "name": "Player killed",
+        "description": "This flag is set by game engine.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000000",
+        "name": "Flayer move",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000000",
+        "name": "Electric whip",
+        "description": "Player has electric whip.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000000",
+        "name": "Arachnid",
+        "description": "Actor is spider, scorpion etc...\nFlag causes the gen_a4sprite_blood_grn.mat and \u002Bvulcansplort to be created when actor is hit.",
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "Face flags",
+    "description": "Polygon face flags",
+    "flags": [
+      {
+        "flag": "0x01",
+        "name": "Double sided",
+        "description": "Disables face backface culling for polygon face.",
+        "enabled": true
+      },
+      {
+        "flag": "0x02",
+        "name": "Translucent",
+        "description": " Face has texture with alpha channel and is put in alpha render queue.\nThis flag applies to adjoin surfaces and Thing 3D model surfaces.",
+        "enabled": true
+      },
+      {
+        "flag": "0x04",
+        "name": "Clamp texture in X",
+        "description": "Mapped texture is clamped in X instead of being repeated (wrapped).",
+        "enabled": true
+      },
+      {
+        "flag": "0x08",
+        "name": "Clamp texture in Y",
+        "description": "Mapped texture is clamped in Y instead of being repeated (wrapped).",
+        "enabled": true
+      },
+      {
+        "flag": "0x10",
+        "name": "Point texture filtering",
+        "description": "Disables bilinear texture filtering for the polygon texture.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20",
+        "name": "ZWrite disabled",
+        "description": "Disables ZWrite for the polygon face.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40",
+        "name": "Ledge (3DO model)",
+        "description": "Player can hang on the ledge of this polygon face. Applies only to 3DO model.\nSame effect as surface flag Ledge = 0x1000000 for world surface",
+        "enabled": true
+      },
+      {
+        "flag": "0x80",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x100",
+        "name": "Fog enabled",
+        "description": "Enables fog rendering for the face polygon.\nThis flag is by default set for all faces but sky surfaces.",
+        "enabled": true
+      },
+      {
+        "flag": "0x200",
+        "name": "WhipAim (3DO model)",
+        "description": "Applies to polygon face of 3DO model and marks the whip aim surface.\nSame effect as surface flag \u0060WhipAim\u0060 = 0x10000000.",
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "Surface flags",
+    "description": "World surface flags",
+    "flags": [
+      {
+        "flag": "0x01",
+        "name": "Floor",
+        "description": "Surface is ground floor.",
+        "enabled": true
+      },
+      {
+        "flag": "0x02",
+        "name": "COG linked",
+        "description": "Surface is linked in COG.",
+        "enabled": true
+      },
+      {
+        "flag": "0x04",
+        "name": "Collision",
+        "description": "Surface has collision.",
+        "enabled": true
+      },
+      {
+        "flag": "0x08",
+        "name": "AI cannot walk on surface",
+        "description": "AI won\u0027t walk on this surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x10",
+        "name": "2x scale",
+        "description": "Affects SlideWall() COG function.\nBy default the animating surface matrix is resized to 320x320, this flag resizes it to 640x640.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20",
+        "name": "1/2 scale",
+        "description": "Affects SlideWall() COG function.\nBy default the animating surface matrix is resized to 320x320, this flag resizes it to 160x160.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40",
+        "name": "1/8 scale",
+        "description": "Affects SlideWall() COG function.\nBy default the animating surface matrix is resized to 320x320, this flag resizes it to 40x40.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80",
+        "name": "Aetherium",
+        "description": "Aetherium surface.\nIf surface is hit or walk on by a thing it produces \u0027aetherium\u0027 environment fx sound, i.e.: fol_in_lrunaet.wav, fol_in_rrunaet.wav.",
+        "enabled": true
+      },
+      {
+        "flag": "0x100",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x200",
+        "name": "Horizon sky",
+        "description": "Surface is part of sky box.\ne.g.: defined in 02_riv.",
+        "enabled": true
+      },
+      {
+        "flag": "0x400",
+        "name": "Ceiling sky",
+        "description": "Surface is part of ceiling sky.\ne.g.: defined in 00_cyn.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800",
+        "name": "Scrolling",
+        "description": "Set by SlideWall() COG function.",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000",
+        "name": "Kill floor",
+        "description": "Player dies if it touches the surface.\ne.g.: cyn_killfloor.cog",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000",
+        "name": "Climbable",
+        "description": "Player can climb on this surface.\ne.g.:ladder",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000",
+        "name": "Track",
+        "description": "Surface is part of a railroad track, e.g.: minecart track.",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000",
+        "name": "Surface changed",
+        "description": "Used by the engine to mark the surface for rendering.",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000",
+        "name": "Metal",
+        "description": "Metal surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000",
+        "name": "Water",
+        "description": "Water surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000",
+        "name": "Shallow water",
+        "description": "Shallow water surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000",
+        "name": "Earth",
+        "description": "Dirt surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x100000",
+        "name": "Web",
+        "description": "Surface is spider web.",
+        "enabled": true
+      },
+      {
+        "flag": "0x200000",
+        "name": "Lava",
+        "description": "Lava or frozen water surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x400000",
+        "name": "Snow",
+        "description": "Snow surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800000",
+        "name": "Wood",
+        "description": "Wood surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000000",
+        "name": "Ledge",
+        "description": "Surface is ledge from which player can hang on.",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000000",
+        "name": "Water climb out ledge",
+        "description": "Surface is ledge above the water from which the player can climb out of the water.",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000000",
+        "name": "1/4 scale",
+        "description": "Affects SlideWall() COG function.\nBy default the animating surface matrix is resized to 320x320, this flag resizes it to 80x80.",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000000",
+        "name": "4x scale",
+        "description": "Affects SlideWall() COG function.\nBy default the animating surface matrix is resized to 320x320, this flag resizes it to 1280x1280.",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000000",
+        "name": "Whip aim",
+        "description": "Player aims for whippable object on this surface.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000000",
+        "name": "Echo",
+        "description": "Indoor surface. Walk on this surface produces *echo sound fx.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000000",
+        "name": "Wood echo",
+        "description": "Indoor wood surface. Walk on this surface produces *echo sound fx.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000000",
+        "name": "Earth echo",
+        "description": "Indoor dirt surface. Walk on this surface produces *echo sound fx.",
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "Thing flags",
+    "description": "",
+    "flags": [
+      {
+        "flag": "0x01",
+        "name": "Emits light",
+        "description": "Thing object emits light. e.g. \u0060light\u0060 param set.",
+        "enabled": true
+      },
+      {
+        "flag": "0x02",
+        "name": "Destroyed",
+        "description": "Thing is destroyed and will be removed from the game.",
+        "enabled": true
+      },
+      {
+        "flag": "0x04",
+        "name": "No weapon collide",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x08",
+        "name": "Whip climbable",
+        "description": "On the WhipAim surface player can mount whip on thing and climb up the whip. e.g.: shs_whip.cog\nNote: if set, thing can\u0027t have flag \u0060Whip swingable\u0060 set",
+        "enabled": true
+      },
+      {
+        "flag": "0x10",
+        "name": "Invisible",
+        "description": "Thing is invisible but touchable unlike \u0060Hidden\u0060.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x40",
+        "name": "Can stand on",
+        "description": "nub_lightning.cog",
+        "enabled": true
+      },
+      {
+        "flag": "0x80",
+        "name": "Mountable",
+        "description": "pyr_fixminecar.cog, shs_barrel.cog",
+        "enabled": true
+      },
+      {
+        "flag": "0x100",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x200",
+        "name": "Dying",
+        "description": "Used in combination with \u0027lifeleft\u0027 param.\nUsually set by the engine marking the object has been killed and to be removed from the game.",
+        "enabled": true
+      },
+      {
+        "flag": "0x400",
+        "name": "COG linked",
+        "description": "Thing is linked in COG.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800",
+        "name": "No crush",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000",
+        "name": "Wood",
+        "description": "Thing is wood object.",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000",
+        "name": "Has shadow",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000",
+        "name": "Snow",
+        "description": "Thing is snow object.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000",
+        "name": "Sending pulse event",
+        "description": "Thing sends pulse interval timeout event to its COG.\nUsually set by COG script.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000",
+        "name": "Sending timer event",
+        "description": "Thing sends timer timeout event to its COG.\nUsually set by COG script",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000",
+        "name": "Hidden",
+        "description": "Thing is hidden and disabled.",
+        "enabled": true
+      },
+      {
+        "flag": "0x100000",
+        "name": "Seen",
+        "description": "Mark Thing to be already seen by player (camera).\n For example see: gen_bubblegen.cog, gen_watersplash.cog.",
+        "enabled": true
+      },
+      {
+        "flag": "0x200000",
+        "name": "Unknown",
+        "description": "",
+        "enabled": true
+      },
+      {
+        "flag": "0x400000",
+        "name": "Metal",
+        "description": "Thing is metal object.",
+        "enabled": true
+      },
+      {
+        "flag": "0x800000",
+        "name": "Earth",
+        "description": "Thing is earth (dirt) object.",
+        "enabled": true
+      },
+      {
+        "flag": "0x1000000",
+        "name": "No Sound",
+        "description": "Thing makes not sound.",
+        "enabled": true
+      },
+      {
+        "flag": "0x2000000",
+        "name": "Underwater",
+        "description": "Thing is in or under water.\ne.g.: swimming",
+        "enabled": true
+      },
+      {
+        "flag": "0x4000000",
+        "name": "Climbable create",
+        "description": "Thing is create like object that player can climb on.",
+        "enabled": true
+      },
+      {
+        "flag": "0x8000000",
+        "name": "Destroyed in water",
+        "description": "Thing is destroyed when enters water.",
+        "enabled": true
+      },
+      {
+        "flag": "0x10000000",
+        "name": "Destroyed in air",
+        "description": "Thing is destroyed when enters water.",
+        "enabled": true
+      },
+      {
+        "flag": "0x20000000",
+        "name": "Generates splash effect",
+        "description": "Sends splash message to it\u0027s COG.",
+        "enabled": true
+      },
+      {
+        "flag": "0x40000000",
+        "name": "Movable",
+        "description": "Thing is movable/pushable.",
+        "enabled": true
+      },
+      {
+        "flag": "0x80000000",
+        "name": "Whip swingable",
+        "description": "On the \u0060WhipAim\u0060 surface player can whip swing using this thing as whip mount point.\ne.g.: In 00_cyn thing whip_branch.",
+        "enabled": true
+      }
+    ]
+  }
+]
