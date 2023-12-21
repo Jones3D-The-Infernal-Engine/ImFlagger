@@ -1097,8 +1097,8 @@
       },
       {
         "flag": "0x20000",
-        "name": "Do not rotate velocity",
-        "description": "",
+        "name": "Start orient move",
+        "description": "Makes new physic thing object to move at speed defined by the vel param when thing is created (Cog script CreateThing func).",
         "enabled": true
       },
       {
